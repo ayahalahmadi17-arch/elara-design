@@ -1,0 +1,200 @@
+/* الخطوط المحلية */
+@font-face { font-family: 'ELARA Offline Arabic'; src: url('../libs/fonts/NotoKufiArabic-Regular.ttf') format('truetype'); font-weight: 400 600; font-display: swap; }
+@font-face { font-family: 'ELARA Offline Arabic'; src: url('../libs/fonts/NotoKufiArabic-Bold.ttf') format('truetype'); font-weight: 700 900; font-display: swap; }
+
+/* دعم الاتجاه العربي */
+/* RTL adjustments for the bundled Bootstrap stylesheet */
+/* دعم الاتجاه العربي الصحيح */
+[dir="rtl"] .ms-1 { margin-left: .25rem !important; margin-right: 0 !important; }
+[dir="rtl"] .ms-2 { margin-left: .5rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-2 { margin-right: .5rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ps-0 { padding-left: 0 !important; padding-right: initial !important; }
+[dir="rtl"] .text-start { text-align: right !important; }
+[dir="rtl"] .text-end { text-align: right !important; } /* تم التعديل هنا لضمان اتجاه اليمين الصحيح */
+[dir="rtl"] .form-control, [dir="rtl"] .form-select { text-align: right; }
+[dir="rtl"] .dropdown-menu { text-align: right; }
+
+/* تنسيق الموقع */
+/* =======================================================
+   مشروع تصميم موقع: إيلارا للتصميم الداخلي
+   ملف التنسيقات الأساسي (style.css) - نسخة مبسطة للطلاب
+   ======================================================= */
+
+/* 1. التنسيقات العامة للصفحة */
+body {
+  font-family: 'Cairo', 'ELARA Offline Arabic', sans-serif;
+  background-color: #FAF6F0; /* خلفية سكرية هادئة */
+  color: #333333;           /* لون الخط */
+  direction: rtl;           /* اتجاه النص من اليمين لليسار */
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+/* تنسيق العناوين والروابط */
+h1, h2, h3, h4, h5, h6 {
+  color: #6A2C38; /* عنابي أساسي */
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #6A2C38;
+}
+
+/* 2. شريط التنقل العلوي (Navbar) */
+.navbar-custom {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E8DCCF;
+  padding: 10px 0;
+  position:sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #6A2C38 !important;
+}
+
+.nav-link {
+  color: #333333 !important;
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #6A2C38 !important;
+}
+
+/* 3. الأزرار */
+.btn-burgundy {
+  background-color: #6A2C38;
+  color: #FFFFFF !important;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.btn-burgundy:hover {
+  background-color: #52202A;
+}
+
+/* 4. حاوية سلايدر الصور (WowSlider) */
+.wow-slider-placeholder {
+  background-color: #F4ECE3;
+  border: 2px dashed #6A2C38;
+  padding: 10px;
+  margin: 10px ;
+}
+
+/* 5. بطاقات المحتوى البسيطة (Cards) */
+.simple-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E8DCCF;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* 6. معرض الصور (شبكة صور وتصميم متجاوب) */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 25px;
+}
+
+@media (max-width: 991px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E8DCCF;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.gallery-body {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 7. أزرار تصفية المعرض (Filters) */
+.filter-tabs {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: #FFFFFF;
+  border: 1px solid #E8DCCF;
+  color: #333333;
+  padding: 5px 15px;
+  margin: 3px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background-color: #6A2C38;
+  color: #FFFFFF;
+  border-color: #6A2C38;
+}
+
+/* 8. جدول الأسعار */
+.table-simple th {
+  background-color: #6A2C38;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.table-simple td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* 9. شريط التذييل البسيط والمختصر (Footer) */
+.footer-compact {
+  background-color: #222222;
+  color: #CCCCCC;
+  border-top: 2px solid #6A2C38;
+  padding: 15px 0;
+  font-size: 0.85rem;
+  margin-top: 40px;
+}
+
+.footer-compact a {
+  color: #FAF6F0;
+  margin: 0 5px;
+}
+img{
+  width: 80%;
+}
+
+/* تنسيق صورة وعنوان نافذة تفاصيل التصميم (نُقل من JavaScript) */
+/* .project-detail-image { height: 220px; width: 100%; object-fit: cover; }
+.project-detail-heading { color: #6A2C38; } */
