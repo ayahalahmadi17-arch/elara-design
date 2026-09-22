@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | إيلارا للتصميم الداخلي</title>
+  <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../libs/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          إيلارا للتصميم الداخلي
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link " href="../index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link " href="designs.html">تصاميمنا</a></li>
+            <li class="nav-item"><a class="nav-link " href="about.html">من نحن</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل معنا</a></li>
+          </ul>
+          <a href="auth.html" class="btn btn-burgundy btn-sm me-lg-3">
+            حسابي
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <main class="container my-5">
+    <div class="text-center mb-5">
+      <h3 class="fw-bold mb-2">تواصل معنا</h3>
+      <p class="text-muted">املأ النموذج وسنتواصل معك خلال 24 ساعة لمناقشة مشروعك وتحديد موعد الاستشارة</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <!-- نموذج التواصل -->
+      <div class="col-lg-7 col-md-12">
+        <div class="simple-card shadow-sm h-100 p-4">
+          <h5 class="fw-bold mb-4" style="color: #6A2C38;">إرسال طلب استشارة</h5>
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="cName" class="form-label small fw-bold">الاسم الكريم <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="cName" placeholder="الاسم الثلاثي" required>
+                <div class="invalid-feedback">يرجى إدخال اسم صحيح لا يقل عن 3 أحرف.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="cEmail" class="form-label small fw-bold">البريد الإلكتروني <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="cEmail" placeholder="name@example.com" required>
+                <div class="invalid-feedback">يرجى كتابة بريد إلكتروني صحيح.</div>
+              </div>
+              <div class="col-12">
+                <label for="cType" class="form-label small fw-bold">نوع المساحة المراد تصميمها</label>
+                <select class="form-select" id="cType" required>
+                  <option value="" selected disabled>يرجى اختيار نوع المساحة</option>
+                  <option value="villa">فيلا أو قصر</option>
+                  <option value="apartment">شقة / بنتهاوس</option>
+                  <option value="living">صالة أو مجلس معيشة</option>
+                  <option value="kitchen">مطبخ أو جناح نوم</option>
+                </select>
+                <div class="invalid-feedback">يرجى اختيار نوع المساحة.</div>
+              </div>
+              <div class="col-12">
+                <label for="cMsg" class="form-label small fw-bold">تفاصيل المساحة والمشروع <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="cMsg" rows="4" placeholder="المساحة التقريبية، المدينة، والنمط المعماري المفضل..." required></textarea>
+                <div class="invalid-feedback">يرجى كتابة وصف موجز للمشروع.</div>
+              </div>
+              <div class="col-12 pt-2">
+                <button type="submit" class="btn btn-burgundy w-100 py-2">إرسال الرسالة</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- كرت بيانات التواصل المرتب -->
+      <div class="col-lg-5 col-md-12">
+        <div class="simple-card shadow-sm h-100 p-4 d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="fw-bold mb-4" style="color: #6A2C38;">معلومات الاستوديو</h5>
+            <p class="text-muted small mb-4">يسعدنا دائماً استقبال استفساراتكم وزيارتكم في مقرنا الرسمي لمناقشة كافة تفاصيل وتصاميم مساحاتكم الخاصة.</p>
+            
+            <div class="d-flex align-items-center mb-4 p-3 bg-light rounded border">
+              <i class="fas fa-map-marker-alt text-danger fs-4 ms-3"></i>
+              <div>
+                <strong class="d-block text-dark small mb-1">المقر الرئيسي</strong>
+                <span class="text-muted small">اليمن صنعاء</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-4 p-3 bg-light rounded border">
+              <i class="fas fa-phone-alt text-danger fs-4 ms-3"></i>
+              <div>
+                <strong class="d-block text-dark small mb-1">الاتصال المباشر</strong>
+                <span class="text-muted small" dir="ltr">+967 784528600</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-3 p-3 bg-light rounded border">
+              <i class="fas fa-envelope text-danger fs-4 ms-3"></i>
+              <div>
+                <strong class="d-block text-dark small mb-1">البريد الإلكتروني</strong>
+                <span class="text-muted small">elara-design@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-3 rounded text-center" style="background-color: #F4ECE3;">
+            <span class="small fw-bold" style="color: #6A2C38;">ساعات العمل الرسمية: الأحد - الخميس (9:00 ص - 6:00 م)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- شريط تذييل صغير وموجز (Compact Minimal Footer) -->
+  <footer class="footer-compact">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <div>
+        <span>إيلارا للتصميم الداخلي &copy; 2026</span>
+        <span class="mx-2">|</span>
+        <span>اليمن صنعاء</span>
+        <span class="mx-2">|</span>
+        <i class="fas fa-phone-alt me-1"></i> 784528600
+      </div>
+      <div>
+        <a href="https://instagram.com" target="_blank" title="Instagram"></a>
+        <a href="https://twitter.com" target="_blank" title="Twitter"></a>
+        <a href="https://pinterest.com" target="_blank" title="Pinterest"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- إشعار Toast بسيط -->
+  <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 1080">
+    <div id="simpleToast" class="toast align-items-center text-white bg-dark border-0 shadow" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <strong id="toastTitle" class="d-block text-warning mb-1"></strong>
+          <span id="toastMsg"></span>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- النافذة المنبثقة التفاعلية بـ AJAX -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content" style="border: 1px solid var(--beige);">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold" style="color: var(--burgundy);">تفاصيل التصميم المعماري</h5>
+          <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4" id="projectModalBody">
+          <!-- يتم جلبه بواسطة AJAX -->
+        </div>
+        <div class="modal-footer bg-light py-2">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">إغلاق</button>
+          <a href="contact.html" class="btn btn-burgundy btn-sm">طلب استشارة</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- المكتبات البرمجية -->
+  <script src="../libs/jquery/jquery.min.js"></script>
+  <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
