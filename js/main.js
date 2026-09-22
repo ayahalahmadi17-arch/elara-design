@@ -22,7 +22,7 @@ $(document).ready(function () {
     bootstrap.Modal.getOrCreateInstance(document.getElementById('projectModal')).show();
 
     $.ajax({
-      url: '../libs/projects.json',
+      url: 'libs/projects.json',
       dataType: 'json',
       success: function (data) { showDetails(data[id], image); },
       error: function () { $('#projectModalBody').text('تعذر تحميل التفاصيل. افتحي المشروع باستخدام Live Server المحلي.'); }
