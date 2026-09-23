@@ -195,6 +195,6 @@ img{
   width: 80%;
 }
 
-/* تنسيق صورة وعنوان نافذة تفاصيل التصميم (نُقل من JavaScript) */
-/* .project-detail-image { height: 220px; width: 100%; object-fit: cover; }
-.project-detail-heading { color: #6A2C38; } */
+/*تنسيق صورة وعنوان نافذة تفاصيل التصميم (نُقل من JavaScript) */
+.project-detail-image { height: 220px; width: 100%; object-fit: cover; }
+.project-detail-heading { color: #6A2C38; }
